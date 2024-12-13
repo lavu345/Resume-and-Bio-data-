@@ -1,0 +1,106 @@
+/* General styling for the page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #008080;
+    color: white;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  /* Centering the form container on the page */
+  .form-container-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack the forms vertically */
+    align-items: center; /* Center the forms horizontally */
+    margin-top: 30px;
+    gap: 20px; /* Space between form containers */
+  }
+  
+  /* Reduced width of the form container */
+  .form-container {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(156, 151, 151, 0.1);
+    padding: 20px;
+    width: 10%; /* Reduced the container size to 30% */
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Form field styling */
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e6b6b;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+ 
+  
+  /* Add spacing specifically for the targeted fields */
+  /*textarea#b_address,
+  textarea#b_hobbies,
+  textarea#b_interests,
+  textarea#r_experience,
+  textarea#r_education,
+  textarea#r_skills {
+    margin-bottom: 20px; /* Extra spacing below specific textareas */
+  
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Adjusted the button style */
+  button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #008080;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #008080;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  

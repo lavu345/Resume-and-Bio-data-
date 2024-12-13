@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume and Bio-data PDF Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+
+  <header>
+    <h1>Resume & Bio-data PDF Generator</h1>
+    <p>Fill out the form below to create your Resume and Bio-data PDF.</p>
+  </header>
+
+  <div class="form-container-wrapper">
+    <!-- Bio-data Form Section -->
+    <div class="form-container">
+      <form id="bioDataForm">
+          <h2>Bio-data</h2>
+          <label for="b_name">Name:</label>
+          <input type="text" id="b_name" placeholder="Enter your name" required>
+          
+          <label for="b_dob">Date of Birth:</label>
+          <input type="date" id="b_dob" required>
+          
+          <label for="b_email">Email:</label>
+          <input type="email" id="b_email" placeholder="Enter your email" required>
+          
+          <label for="b_phone">Phone:</label>
+          <input type="text" id="b_phone" placeholder="Enter your phone number" required>
+          
+          <label for="b_address">Address:</label>
+          <textarea id="b_address" placeholder="Enter your address" required></textarea>
+
+          <label for="b_interests">Interests:</label>
+          <textarea id="b_interests" placeholder="Enter your interests" required></textarea>
+
+          <label for="b_hobbies">Hobbies:</label>
+          <textarea id="b_hobbies" placeholder="Enter your hobbies" required></textarea>
+      </form>
+    </div>
+
+    <!-- Resume Form Section -->
+    <div class="form-container">
+      <form id="resumeForm">
+        <div class="form-section">
+          <h2>Resume</h2>
+          <label for="r_education">Education:</label>
+          <textarea id="r_education" placeholder="Describe your education" required></textarea>
+          
+          <label for="r_experience">Experience:</label>
+          <textarea id="r_experience" placeholder="Describe your experience" required></textarea>
+          
+          <label for="r_skills">Skills:</label>
+          <textarea id="r_skills" placeholder="List your skills" required></textarea>
+          
+          <label for="r_projects">Projects:</label>
+          <textarea id="r_projects" placeholder="Describe your projects" required></textarea>
+          
+          <button type="button" id="generatePdf">Generate PDF</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Resume Builder</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
